@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1 id="myh1">Welcome to jQuery</h1>
+    <h3>This is a Tag Selectors</h3>
+    <button id="btn">Click me</button>
+    <p class="myp">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam veritatis
+      dolor animi iusto, maxime necessitatibus velit, cupiditate ea recusandae
+      obcaecati eos earum dicta. Nobis, minima architecto nisi eligendi eum
+      nemo.
+    </p>
+    <script>
+      $(document).ready(function () {
+        alert("Welcome to jQuery");
+
+        $(".myp").css("border", "2px solid red");
+        $(".myp").css("padding", "20px");
+        $("#btn").click(function () {
+          $("h3").css("font-size", "40px");
+          $("h3").css("color", "red");
+        });
+        $("#btn").click(function () {
+          $("#myh1").css("color", "green");
+        });
+      });
+    </script>
+  </body>
+</html>
